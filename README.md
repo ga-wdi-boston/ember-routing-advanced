@@ -19,6 +19,8 @@ By the end of this, developers should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Install dependencies with `npm install` and `bower install`.
+1.  Run the development server with `ember server`. Use the `--proxy` flag to
+    avoid writing development-specific CORS and CSP settings.
 
 ## Code-Along: Routing to Resources
 
@@ -276,5 +278,5 @@ team routes to filter all employees using a dynamic segment.
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or alternative
-licensing, please contact legal@ga.co.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.

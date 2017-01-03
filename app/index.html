@@ -9,16 +9,16 @@
 
     {{content-for "head"}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/ga-wdi-boston.ember-routing-dynamic.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/ga-wdi-boston.ember-routing-dynamic.css">
 
     {{content-for "head-footer"}}
   </head>
   <body class="container-fluid">
     {{content-for "body"}}
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/ga-wdi-boston.ember-routing-dynamic.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/ga-wdi-boston.ember-routing-dynamic.js"></script>
 
     {{content-for "body-footer"}}
   </body>
