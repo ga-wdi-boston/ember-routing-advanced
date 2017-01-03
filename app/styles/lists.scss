@@ -1,0 +1,11 @@
+$list-hover: #6495ed;
+
+ul {
+  li {
+    max-width: 400px;
+
+    &:hover {
+      color: $list-hover;
+    }
+  };
+}
