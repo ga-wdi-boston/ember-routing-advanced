@@ -1,5 +1,5 @@
 <ul>
   {{#each model as |person| }}
-    <li>{{ person.name }}</li>
+    <li>{{#link-to 'employees' person }}{{ person.name }}{{/link-to}}</li>
   {{/each}}
 </ul>

@@ -1,33 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function() {
-    return [
-      {
-        id: 1,
-        name: 'Rachel',
-        team: 'engineering',
-      },
-      {
-        id: 2,
-        name: 'Antony',
-        team: 'engineering',
-      },
-      {
-        id: 3,
-        name: 'Chris',
-        team: 'leadership',
-      },
-      {
-        id: 4,
-        name: 'Ben',
-        team: 'leadership',
-      },
-      {
-        id: 5,
-        name: 'Hannah',
-        team: 'leadership',
-      },
-    ];
+  filter: Ember.inject.service(),
+  setupController(controller, employee) {
+   controller.set('model', employee);
   },
+  model(params) {
+    const employees = this.get('filter').employees;
+    return employees.find((employee) => employee.id === +params.employee_id);
+  }
 });

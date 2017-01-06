@@ -17,7 +17,7 @@ Router.map(function () {
   });
   this.route('products');
   this.route('product', { path: '/products/:product_id' });
-  this.route('employees');
+  this.route('employees', { path: 'employees/:employee_id'});
 });
 
 export default Router;

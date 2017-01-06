@@ -1,4 +1,6 @@
 <h3>Employees</h3>
-{{render 'list-people' model}}
+<h5>{{model.name}}</h5>
+
+<p>Team: {{#link-to teamPath}}{{title-case model.team}}{{/link-to}}</p>
 
 {{outlet}}
